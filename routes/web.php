@@ -72,3 +72,5 @@ Route::get('/', function () {
     array_push($datas, $object6);
     return view('home', ['datas' => $datas]);
 });
+
+Route::get("/mahasiswa/{id}", [App\Http\Controllers\PageController::class, "getMahasiswa"]);
